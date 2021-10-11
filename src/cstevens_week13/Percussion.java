@@ -59,18 +59,6 @@ public class Percussion extends StruckInstrument {
      * Override method from super class Instrument
      */
     @Override
-    public void display() {
-        System.out.printf("You have entered the following %s instruments:\n",
-                family);
-        for (int i = 0; i < percussion.size(); i++) {
-            System.out.println(percussion.get(i));
-        }
-    }
-
-    /**
-     * Override method from super class Instrument
-     */
-    @Override
     public void play() {
         for (int i = 0; i < percussion.size(); i++) {
             String p = percussion.get(i);

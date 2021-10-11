@@ -59,18 +59,6 @@ public class Strings extends FingeredInstrument {
      * Override method from super class Instrument
      */
     @Override
-    public void display() {
-        System.out.printf("You have entered the following %s instruments:\n",
-                family);
-        for (int i = 0; i < strings.size(); i++) {
-            System.out.println(strings.get(i));
-        }
-    }
-
-    /**
-     * Override method from super class Instrument
-     */
-    @Override
     public void play() {
         for (int i = 0; i < strings.size(); i++) {
             String s = strings.get(i);

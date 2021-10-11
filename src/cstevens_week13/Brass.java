@@ -58,18 +58,6 @@ public class Brass extends BlownInstrument {
      * Override method from super class Instrument
      */
     @Override
-    public void display() {
-        System.out.printf("You have entered the following %s instruments:\n",
-                family);
-        for (int i = 0; i < brass.size(); i++) {
-            System.out.println(brass.get(i));
-        }
-    }
-
-    /**
-     * Override method from super class Instrument
-     */
-    @Override
     public void play() {
         for (int i = 0; i < brass.size(); i++) {
             String b = brass.get(i);

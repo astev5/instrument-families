@@ -19,6 +19,4 @@ public abstract class Instrument {
      */
     abstract public void play();
 
-    abstract public void display();
-
 } //End Subclass Instrument

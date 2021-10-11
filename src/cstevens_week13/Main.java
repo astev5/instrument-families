@@ -43,10 +43,10 @@ public class Main {
         Percussion drum = new Percussion();
 
         /* Call overridden play methods without user data */
-        horn.play();
-        chord.play();
-        flute.play();
-        drum.play();
+//        horn.play();
+//        chord.play();
+//        flute.play();
+//        drum.play();
 
         // Begin Outer Loop
         do {
@@ -102,7 +102,10 @@ public class Main {
                     } while (!handle.getYesNo());
 
                     if (choice3.equalsIgnoreCase("y")) {
-                        horn.display();
+                        horn.play();
+                        chord.play();
+                        flute.play();
+                        drum.play();
                     }
                     break;
 
@@ -136,7 +139,10 @@ public class Main {
                     } while (!handle.getYesNo());
 
                     if (choice3.equalsIgnoreCase("y")) {
-                        chord.display();
+                        horn.play();
+                        chord.play();
+                        flute.play();
+                        drum.play();
                     }
                     break;
 
@@ -170,7 +176,10 @@ public class Main {
                     } while (!handle.getYesNo());
 
                     if (choice3.equalsIgnoreCase("y")) {
-                        flute.display();
+                        horn.play();
+                        chord.play();
+                        flute.play();
+                        drum.play();
                     }
                     break;
 
@@ -204,13 +213,15 @@ public class Main {
                     } while (!handle.getYesNo());
 
                     if (choice3.equalsIgnoreCase("y")) {
-                        drum.getNames();
+                        horn.play();
+                        chord.play();
+                        flute.play();
+                        drum.play();
                     }
                     break;
 
                 case 5:
                     sc.nextLine();
-                    System.out.print("This will display all instruments.\n");
                     horn.play();
                     chord.play();
                     flute.play();
@@ -237,6 +248,6 @@ public class Main {
 
         System.out.printf("Exiting Program. Goodbye.\n");
 
-    }
+    } //End Main Method
 
-} //End Main Method
+} 
